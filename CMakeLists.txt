@@ -100,6 +100,7 @@ if(${CMAKE_SYSTEM_PROCESSOR} MATCHES aarch64 OR arm)
       ${SPINNAKER_INCLUDE_DIR}
       ${OpenCV_INCLUDE_DIRS}
       ${Boost_INCLUDE_DIR}
+      include
     )
 
     link_directories( ${SPINNAKER_LIB_DIR} )
