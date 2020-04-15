@@ -919,7 +919,7 @@ void acquisition::Capture::run_soft_trig() {
                 }
             }
 
-            int key = WaitKey(1);
+            int key = waitKey(1);
             ROS_DEBUG_STREAM("Key press: "<<(key & 255)<<endl);
             
             if ( (key & 255)!=255 ) {
@@ -946,7 +946,7 @@ void acquisition::Capture::run_soft_trig() {
                         }
                 } else if( (key & 255)==27 ) {  // ESC
                     ROS_INFO_STREAM("Terminating...");
-                    DestroyAllWindows();
+                    destroyAllWindows();
                     ros::shutdown();
                     break;
                 }
@@ -973,7 +973,7 @@ void acquisition::Capture::run_soft_trig() {
                 cout<<"Nframes "<< nframes_<<endl;
                 if (count > nframes_) {
                     ROS_INFO_STREAM(nframes_ << " frames recorded. Terminating...");
-                    DestroyAllWindows();
+                    destroyAllWindows();
                     break;
                 }
             }
