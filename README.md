@@ -49,11 +49,11 @@ Modify the `params/test_params.yaml` file replacing the cam-ids and master cam s
 ```bash
 # To launch nodelet verison of driver, use #
 
-roslaunch spinnaker_camera_driver acquisition_nodelet.launch
+roslaunch spinnaker_sdk_camera_driver acquisition_nodelet.launch
 
 # To launch node version of driver, use 
 
-roslaunch spinnaker_camera_driver acquisition.launch
+roslaunch spinnaker_sdk_camera_driver acquisition.launch
 # Test that the images are being published by running
 rqt_image_view
 ```
